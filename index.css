@@ -1,0 +1,149 @@
+.banner {
+    width: 100%;
+}
+
+.utensilios {
+    width: 150px;
+    float: left;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+    clear: both;
+    color: rgb(0,0,0,0.7);
+}
+
+
+.titulo-principal:before {
+    content: "[ ";
+}
+
+.titulo-principal:after {
+    content: " ]";
+}
+
+
+.principal {
+    padding: 3em 0;
+    background-color: #fefefe;
+}
+
+.principal p {
+    margin: 0 0 1em 0;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+
+/*mapa*/
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe , #888888);
+}
+
+.mapa p {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+
+/*beneficios*/
+.beneficios {
+    padding: 3em 0;
+    background-color: #888888;
+}
+
+.conteudo__beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.beneficios__lista {
+    width: 40%; 
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens::before {
+    content: "★";
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.beneficios__imagem {
+    width: 60%;
+    opacity: 30%;
+    transition: 400ms all;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.beneficios__imagem:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    box-shadow: none;
+    
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/*Media querie*/
+
+@media screen and (max-width: 480px) {
+    .caixa, .conteudo__beneficios, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .cabecalho__navegacao {
+        position: static;
+    }
+
+    .cabecalho__lista-item {
+        display: block;
+        text-align: center;
+        line-height: 2em;
+    }
+
+    .utensilios {
+        display: none;
+    }
+
+    .principal, .mapa {
+        padding: 0 1rem;
+    }
+    
+    .beneficios__lista {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .beneficios__imagem {
+        width: 100%;
+        opacity: 100%;
+        box-shadow: none;
+       
+    }
+
+    
+}

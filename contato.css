@@ -1,0 +1,58 @@
+.formulario {
+    margin: 40px 0;
+}
+
+.formulario__label, .formulario__texto, .formulario__label--checkbox {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.formulario__campo, .formulario__campo--textarea {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.formulario__botaoEnviar { 
+    display: block;
+}
+
+.formulario__label--checkbox { 
+    margin: 20px 0;
+}
+
+.formulario__botaoEnviar {
+    width: 40%;
+    padding: 15px 0;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 5s all;
+    cursor: pointer;
+}
+
+.formulario__botaoEnviar:hover {
+    background-color: darkorange;    
+    transform: scale(1.2);
+
+}
+
+table {
+    margin: 20px 0 40px 0;
+}
+
+thead {
+    background-color: #555555;
+    font-weight: bold;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px ;
+}
